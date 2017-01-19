@@ -13,7 +13,6 @@ import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;
 
-@Api("用于用户操作")
 @Controller
 public class ItemController {
 	@RequestMapping("/item")
