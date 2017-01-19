@@ -1,11 +1,15 @@
 package cn.test.bean;
 
+import com.wordnik.swagger.annotations.ApiModel;
+import com.wordnik.swagger.annotations.ApiModelProperty;
+
+@ApiModel("个人用户信息")
 public class User {
-	//用户名
+	@ApiModelProperty(value="用户名",required=true)
 	private String name;
-	//用户年龄
+	@ApiModelProperty(value="用户年龄",required=false)
 	private Integer age;
-	//用户性别
+	@ApiModelProperty(value="用户性别",required=false)
 	private Integer sex;
 	public String getName() {
 		return name;
